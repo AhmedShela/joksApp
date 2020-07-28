@@ -8,11 +8,12 @@
 <body>
     <header>
         <a href="/">home</a>
+        <a href="/myFav">my Fav List</a>
+        <a href="/random">Random</a>
     </header>
     <main>
         <% allJokes.forEach(joke=>{ %>
             <div class="jokeCard">
-                <p><%= joke.id %></p>
                 <h1><%= joke.type %></h1>
                 <h3><%= joke.setup %></h3>
                 <p><%= joke.punchline %></p>

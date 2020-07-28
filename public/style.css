@@ -20,3 +20,12 @@ button{
     margin: 10px;
     background-color: pink;
 }
+
+header a{
+    text-decoration: none;
+    background-color: pink;
+    border: 1px solid white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
