@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="/">home</a>
+    </header>
+    <main>
+        <% allJokes.forEach(joke=>{ %>
+            <div class="jokeCard">
+                <p><%= joke.id %></p>
+                <h1><%= joke.type %></h1>
+                <h3><%= joke.setup %></h3>
+                <p><%= joke.punchline %></p>
+                <form action="/jokeDtl" method="post">
+                    <input type="hidden" name="id" value="<%= joke.id %>" id="">
+                    <input type="hidden" name="type" value="<%= joke.type %>" id="">
+                    <input type="hidden" name="setup" value="<%= joke.setup %>" id="">
+                    <input type="hidden" name="punchline" value="<%= joke.punchline %>" id="">
+                    <button>show details</button>
+                </form>
+            </div>
+      <%  }) %>
+    </main>
+</body>
+</html>

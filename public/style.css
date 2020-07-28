@@ -1,0 +1,22 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.jokeCard{
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 2%;
+}
+input{
+    display: block;
+    margin-left: 35%;
+}
+button{
+    width: 100px;
+    height: 36px;
+    margin: 10px;
+    background-color: pink;
+}
